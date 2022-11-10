@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/produto.js"></script>
+
+    <title>Cadastrar Produtos</title>
+</head>
+<body>
+
+    <header>
+        <h1>CRUD 1.0</h1>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>PRODUTOS</h2>
+        </div>
+
+        <div class="card">
+            <div class="lineInput">
+                <label>Produto</label>
+                <input type="text" id="produto" placeholder="Nome do produto">
+            </div>
+
+            <div class="lineInput">
+                <label>Preço </label>
+                <input type="text" id="preco" placeholder="Valor produto">
+            </div>
+
+            <!--Adicionar a variável produto, que instancia a classe Produto-->
+            <button onclick="produto.salvar()">Salvar</button>
+            <button onclick="produto.cancelar()">Cancelar</button>
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th>Id</th>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Ações</th>
+                </thead>
+
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
