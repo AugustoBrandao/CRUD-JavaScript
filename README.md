@@ -9,8 +9,7 @@
 - **Data de Término:** 12/11/2022
 
 ## Layout
-
-![Untitled](PP1-CRUD%20de%20Produtos%201%200%2007714ab5f4034328a35585e9f1b23cea/Untitled.png)
+<img src="./README_Images/Untitled.png" width=230px height="400px">
 
 Basicamente esse é o layout principal e único da aplicação, no qual será capaz de cadastrar o nome do produto e o seu respectivo preço.
 
@@ -18,13 +17,13 @@ Na parte de ações, é possível realizar a edição e a exclusão da linha res
 
 A aplicação se resume no botão de salvar, que executa uma variável chamada **produto que é responsável por instanciar a classe Produtos e seus métodos internos, como salvar() e cancelar().**
 
-![Untitled](PP1-CRUD%20de%20Produtos%201%200%2007714ab5f4034328a35585e9f1b23cea/Untitled%201.png)
-
-![Untitled](PP1-CRUD%20de%20Produtos%201%200%2007714ab5f4034328a35585e9f1b23cea/Untitled%202.png)
+<img src="./README_Images/Untitled 1.png" width=530px height="100px">
+<br>
+<img src="./README_Images/Untitled 2.png" width=530px height="170px">
 
 ## Método salvar()
+<img src="./README_Images/Untitled 3.png" width=550px height="280px">
 
-![Untitled](PP1-CRUD%20de%20Produtos%201%200%2007714ab5f4034328a35585e9f1b23cea/Untitled%203.png)
 
 método **salvar()**
 
@@ -32,7 +31,7 @@ Primeiro os dados inseridos no campo são lidos pelo método **readData(),** que
 
 Depois é verificado se o método **validateField()** retorna true. Caso positivo o método **adicionar()** é acionado, mas em caso negativo é retornado um alert informando os campos a serem preenchidos. 
 
-![Untitled](PP1-CRUD%20de%20Produtos%201%200%2007714ab5f4034328a35585e9f1b23cea/Untitled%204.png)
+<img src="./README_Images/Untitled 4.png" width=400px height="400px">
 
 Isso ocorre pois quando o método é chamada dentro do **if**, além de ser verificado o retorno, também ocorre a execução desse método **validateField()**. 
 
@@ -40,13 +39,13 @@ Vamos analisar cada um deles de modo mais detalhado ainda, para deixarmos a docu
 
 ## **Método readData()**
 
-![Untitled](PP1-CRUD%20de%20Produtos%201%200%2007714ab5f4034328a35585e9f1b23cea/Untitled%205.png)
+<img src="./README_Images/Untitled 5.png" width=480px height="150px">
 
 Responsável por criar um objeto de produto, inserindo os campos preenchidos em HTML nos campos do objeto.
 
 ## Método validateField()
 
-![Untitled](PP1-CRUD%20de%20Produtos%201%200%2007714ab5f4034328a35585e9f1b23cea/Untitled%206.png)
+<img src="./README_Images/Untitled 6.png" width=480px height="450px">
 
 Recebe um produto como parâmetro.
 
@@ -54,11 +53,11 @@ Se algum dos campos não estiver preenchido, um alert é emitido na tela e o ret
 
 ## Método adicionar()
 
-![Untitled](PP1-CRUD%20de%20Produtos%201%200%2007714ab5f4034328a35585e9f1b23cea/Untitled%207.png)
+<img src="./README_Images/Untitled 7.png" width=480px height="150px">
 
 No método construtor, criamos dois atributos: o id e um array que irá listar todos os objetos de Produtos que forem criados.
 
-![Untitled](PP1-CRUD%20de%20Produtos%201%200%2007714ab5f4034328a35585e9f1b23cea/Untitled%208.png)
+<img src="./README_Images/Untitled 8.png" width=480px height="150px">
 
 O método **readData()** realiza a criação do objeto Produto que será enviado como parâmetro para o método **adicionar()** .
 
